@@ -1,0 +1,79 @@
+body {
+  display: flex;                 /* Usamos Flexbox */
+  flex-direction: column;        /* Organizamos los elementos en una columna */
+  justify-content: center;       /* Centrado vertical */
+  align-items: center;           /* Centrado horizontal */
+  height: 100vh;                 /* Altura completa de la ventana */
+  margin: 0;                     /* Eliminamos el margen predeterminado */
+  background-color: rgba(91, 207, 68, 0.719); /* Fondo semi-transparente */
+}
+
+h1 {
+  font-size: 2em;                /* Tamaño de fuente */
+  color: #fff;                   /* Color blanco para el texto */
+  margin-bottom: 20px;           /* Espacio debajo del título */
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;        /* Los campos del formulario estarán en columna */
+  gap: 15px;                     /* Espacio entre los campos */
+  padding: 20px;
+  background-color: #fff;        /* Fondo blanco para el formulario */
+  border-radius: 10px;           /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(8, 2, 36, 0.623); /* Sombra sutil */
+  width: 400px;                  /* Ancho fijo del formulario */
+  max-width: 90%;                /* Asegura que no se exceda el 90% del ancho de la pantalla */
+}
+
+
+.mb-2 {
+  display: flex;
+  flex-direction: column;  /* Coloca el label arriba del input */
+  margin-bottom: 15px;     /* Espacio entre cada campo */
+}
+
+
+/* Estilo para los campos (input, textarea) */
+input, textarea {
+  padding: 10px;                 /* Espaciado interno */
+  border-radius: 5px;            /* Bordes redondeados */
+  border: 1px solid #ccc;        /* Borde gris claro */
+  margin-top: 5px;               /* Espacio encima de los campos */
+  font-size: 1em;                /* Tamaño de fuente */
+}
+
+/* Estilo cuando el campo está enfocado */
+input:focus, textarea:focus {
+  border-color: #4CAF50;         /* Borde verde cuando está enfocado */
+  outline: none;                 /* Elimina el borde predeterminado */
+}
+
+/* Estilo para las etiquetas (label) */
+label {
+  font-size: 1.1em;              /* Tamaño de fuente */
+  margin-bottom: 5px;            /* Espacio debajo de la etiqueta */
+  color: #333;                   /* Color de texto */
+}
+
+/* Estilo del botón de envío */
+button {
+  padding: 10px 20px;            /* Relleno interno */
+  background-color: #4CAF50;     /* Fondo verde */
+  color: #fff;                   /* Color de texto blanco */
+  border: none;                  /* Elimina el borde */
+  border-radius: 5px;            /* Bordes redondeados */
+  font-size: 1.1em;              /* Tamaño de fuente */
+  cursor: pointer;               /* Cursor de puntero */
+  transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+/* Estilo cuando el botón se pasa por encima (hover) */
+button:hover {
+  background-color: #45a049;     /* Fondo más oscuro cuando se pasa el mouse */
+}
+
+/* Espaciado entre los campos */
+.mb-2 {
+  margin-bottom: 15px;            /* Añade margen en la parte inferior de cada campo */
+}
