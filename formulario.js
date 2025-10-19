@@ -2,7 +2,7 @@ document.getElementById("formulario").addEventListener("submit", function(event)
   event.preventDefault();  // Evita que el formulario se envíe de manera tradicional
 
   // Inicializamos EmailJS con la clave pública
-  emailjs.init("9dKxRZZG8hCcUVRaF");  // Tu clave pública
+  emailjs.init("GnodJkpAMFsBAeY9VofNh");  // Tu clave pública
 
   // Primero, enviar el mensaje al admin (tu correo)
   emailjs.sendForm("service_m6khuuu", "template_uewhmwr", this)
